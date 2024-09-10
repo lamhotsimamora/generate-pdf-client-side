@@ -15,7 +15,7 @@
         Make PDF from Image | Client Side
         </div>
 
-        <img src="images/images.jpg" class="img-fluid" alt="..." width="150" height="150">
+        <img src="images.jpg" class="img-fluid" alt="..." width="150" height="150">
         <br><br>
         <button type="button" onclick="generatePDF()" class="btn btn-primary">Generate</button>
 
@@ -43,7 +43,7 @@
             const doc = new jsPDF();
             doc.setFontSize(40);
             doc.text("Smart Watch", 35, 25);
-            doc.addImage("images/images.jpg", "JPEG", 15, 40, 180, 180);
+            doc.addImage("images.jpg", "JPEG", 15, 40, 180, 180);
 
             doc.save(randomStr(10)+".pdf");
         }
